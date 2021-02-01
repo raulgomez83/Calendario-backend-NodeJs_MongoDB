@@ -17,7 +17,7 @@ const crearEvento = async (req, res = response) => {
     res.json({ ok: true, eventoGuardado });
   } catch (error) {
     console.log(error);
-    res.status(500).json({ ok: false, msg: "ERROOOOR" });
+    res.status(500).json({ ok: false, msg: "ERROOOOR get evento" });
   }
 
   res.json({
@@ -54,7 +54,7 @@ const actualizarEvento = async (req, res = response) => {
     });
   } catch (error) {
     console.log(error);
-    res.status(500).json({ ok: false, msg: "ERROOOOR" });
+    res.status(500).json({ ok: false, msg: "ERROOOOR actualizar evento" });
   }
 };
 const eliminarEvento = async (req, res = response) => {
@@ -83,7 +83,7 @@ const eliminarEvento = async (req, res = response) => {
     });
   } catch (error) {
     console.log(error);
-    res.status(500).json({ ok: false, msg: "ERROOOOR" });
+    res.status(500).json({ ok: false, msg: "ERROOOOR eliminar evento" });
   }
   res.json({
     ok: true,
